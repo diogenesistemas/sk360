@@ -1,8 +1,9 @@
  import { useEffect } from 'react';
 import { FormEvent, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 import { RadarChart } from '../components/RadarChart';
+import { SkillCode } from '../components/SkillCode';
 import { useAuth } from '../hooks/useAuth';
 import { database } from '../services/firebase';
 
@@ -21,7 +22,7 @@ export function Skill(){
   const params = useParams<SkillParams>();
   const [newQuestion, setNewQuestion] = useState('');
   const [skills, setSkills] = useState<String[]>([])
-  const [title, setTitle] = useState('');
+
 
   const skillId = params.id;
 
@@ -74,7 +75,7 @@ export function Skill(){
             </>
             ) }
           </div>
-          {/* <RoomCode code={roomId} /> */}
+          <SkillCode code={skillId} />
         </div>
       </header>
 
@@ -84,6 +85,9 @@ export function Skill(){
         </div>
 
         <RadarChart data={skills}/>
+        <p>
+            Quer fazer uma nova avaliação? <Link to="/">clique aqui</Link>
+          </p>
       </main>
     </div>
 
