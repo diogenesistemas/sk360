@@ -11,7 +11,7 @@ export function SkillCode(props: RoomCodeProps) {
 
   return (
     <button className="skill-code" onClick={copyRoomCodeToClipboard}>
-      <span>Sala #{props.code}</span>
+      <span>Skill #{props.code}</span>
     </button>
   )
 }
