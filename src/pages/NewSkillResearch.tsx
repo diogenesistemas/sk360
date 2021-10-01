@@ -49,7 +49,7 @@ export function NewSkillResearch() {
     return (
     <div id="page-auth">
       <aside>
-        <strong>Crie seu grágico de habilidades</strong>
+        <strong>Crie seu gráfico de habilidades</strong>
         <p>Produzido para Talk sobre soft Skills</p>
       </aside>
       <main>
