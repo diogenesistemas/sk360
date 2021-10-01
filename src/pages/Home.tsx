@@ -51,7 +51,7 @@ async function handleJoinSkill(event: FormEvent){
         <div className="main-content">
           <button onClick={handleSkillResearch} className="create-chart">
             <img src={googleIconImg} alt="Logo do Google" />
-            Crie sua havaliação com o Google
+            Crie sua avaliação com o Google
           </button>
           <div className="separator">ou visualize uma avaliação</div>
           <form onSubmit={handleJoinSkill}>
