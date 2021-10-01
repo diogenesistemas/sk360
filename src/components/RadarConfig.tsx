@@ -1,15 +1,15 @@
 export const RadarData = {
-  labels: ["Finger Strength", "Power", "Endurance", "Stability", "Flexability"],
+  labels: ["Comunicação", "Liderança", "Ética", "Trabalho em equipe", "Adaptabilidade","Gestão de tempo", "Criatividade", "Senso crítico"],
   datasets: [
     {
-      label: "March",
+      label: "Soft Skills",
       backgroundColor: "rgba(34, 202, 236, .2)",
       borderColor: "rgba(34, 202, 236, 1)",
       pointBackgroundColor: "rgba(34, 202, 236, 1)",
       poingBorderColor: "#fff",
       pointHoverBackgroundColor: "#fff",
       pointHoverBorderColor: "rgba(34, 202, 236, 1)",
-      data: [13, 10, 12, 6, 5]
+      data: ['10', '8', '6', '6', '5', '3', '2', '0']
     }
   ]
 };
@@ -17,8 +17,8 @@ export const RadarOptions = {
   scale: {
     ticks: {
       min: 0,
-      max: 16,
-      stepSize: 2,
+      max: 10,
+      stepSize: 1,
       showLabelBackdrop: false,
       backdropColor: "rgba(203, 197, 11, 1)"
     },

@@ -62,7 +62,7 @@
       }
   
       form {
-        input {
+        input, select, option {
           height: 50px;
           border-radius: 8px;
           padding: 0 16px;
@@ -70,11 +70,11 @@
           border: 1px solid #a8a8b3;
         }
   
-        button { 
+        button, select { 
           margin-top: 16px;
         }
   
-        button, input {
+        button, input, select {
           width: 100%;
         }
       }
