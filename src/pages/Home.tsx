@@ -48,6 +48,9 @@ async function handleJoinSkill(event: FormEvent){
         <p>Produzido para Talk sobre soft Skills</p>
       </aside>
       <main>
+      <div className="container">
+
+       </div> 
         <div className="main-content">
           <button onClick={handleSkillResearch} className="create-chart">
             <img src={googleIconImg} alt="Logo do Google" />

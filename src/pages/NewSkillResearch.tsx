@@ -53,6 +53,7 @@ export function NewSkillResearch() {
         <p>Produzido para Talk sobre soft Skills</p>
       </aside>
       <main>
+        <div className="container">
         <div className="main-content">
           <header>
              <h1>{user?.name}</h1>
@@ -83,6 +84,7 @@ export function NewSkillResearch() {
           <p>
             Quer fazer uma nova avaliação? <Link to="/">clique aqui</Link>
           </p>
+        </div>
         </div>
       </main>
     </div>
