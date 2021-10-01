@@ -1,6 +1,8 @@
  import { useEffect } from 'react';
 import { FormEvent, useState } from 'react';
 import { Link, useParams } from 'react-router-dom'
+import { useHistory } from 'react-router';
+import { Button } from '../components/Button';
 
 import { RadarChart } from '../components/RadarChart';
 import { SkillCode } from '../components/SkillCode';
@@ -22,7 +24,7 @@ export function Skill(){
   const params = useParams<SkillParams>();
   const [newQuestion, setNewQuestion] = useState('');
   const [skills, setSkills] = useState<String[]>([])
-
+  const history = useHistory();
 
   const skillId = params.id;
 
@@ -85,9 +87,13 @@ export function Skill(){
         </div>
 
         <RadarChart data={skills}/>
-        <p>
-            Quer fazer uma nova avaliação? <Link to="/">clique aqui</Link>
-          </p>
+
+          <form onSubmit={()=>history.push("/")}>
+          
+            <Button type="submit">
+              Nova avaliação
+            </Button>
+          </form>
       </main>
     </div>
 
