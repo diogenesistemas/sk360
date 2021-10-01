@@ -34,12 +34,15 @@ export function NewSkillResearch() {
     setNewSkill(copyNewSkill);
   }
 
-  function renderCombo(position:number) {
+  function renderCombo(position:number, label:string) {
     return (
+      <>
+      <span>{label}</span>
       <Combo
           value={newSkill[position]}
           onChange={(e) => handleStateComboo(e, position)}
       />
+      </>
     );    
   }
 
@@ -60,14 +63,15 @@ export function NewSkillResearch() {
               onChange={event => setNewSkill(event.target.value)}
               value={newSkill}
             /> */}
-            {renderCombo(0)}
-            {renderCombo(1)}
-            {renderCombo(2)}
-            {renderCombo(3)}
-            {renderCombo(4)}
-            {renderCombo(5)}
-            {renderCombo(6)}
-            {renderCombo(7)}
+
+            {renderCombo(0, "Comunicação")}
+            {renderCombo(1, "Liderança")}
+            {renderCombo(2, "Ética")}
+            {renderCombo(3, "Trabalho em equipe")}
+            {renderCombo(4, "Adaptabilidade")}
+            {renderCombo(5, "Gestão de tempo")}
+            {renderCombo(6, "Criatividade")}
+            {renderCombo(7, "Senso crítico")}
             <Button type="submit">
               Entrar na sala
             </Button>
