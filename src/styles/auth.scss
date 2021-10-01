@@ -4,11 +4,12 @@ $medium: 900px;
 #page-auth {
     display: flex;
     align-items: stretch;
+    height: 100vh;
   
     aside {
       flex: 7;
       
-      height: 100vh;
+    
   
       background: #835afd;
 
