@@ -1,10 +1,10 @@
 import '../styles/skill-code.scss';
 
-type RoomCodeProps = {
+type SkillCodeProps = {
   code: string;
 } 
 
-export function SkillCode(props: RoomCodeProps) {
+export function SkillCode(props: SkillCodeProps) {
   function copyRoomCodeToClipboard() {
     navigator.clipboard.writeText(props.code)
   }

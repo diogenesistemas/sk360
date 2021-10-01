@@ -4,12 +4,11 @@ $medium: 900px;
 #page-auth {
     display: flex;
     align-items: stretch;
-    height: 100vh;
   
     aside {
       flex: 7;
   
-      background: #835afd;
+      background: #fafa;
 
       @media screen and (max-width: $small){
         display: none;
@@ -80,8 +79,12 @@ $medium: 900px;
           padding: 0 16px;
           background: #FFF;
           border: 1px solid #a8a8b3;
-        }
 
+          .form-combo{
+            display: flex;
+          }
+
+        }
        
   
         button, select { 

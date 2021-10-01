@@ -54,9 +54,13 @@ export function NewSkillResearch() {
       </aside>
       <main>
         <div className="main-content">
-         <h1>{user?.name}</h1>
-         <h2>Fazer avaliação</h2>
-          <form onSubmit={handleCreateSkillResearch} className="registerForm_Container">
+          <header>
+             <h1>{user?.name}</h1>
+             <h2>Fazer avaliação</h2>
+          </header>
+   
+
+           <form onSubmit={handleCreateSkillResearch} className="form-combo">
             {/* <input 
               type="text"
               placeholder="Digite um identificador"
@@ -73,7 +77,7 @@ export function NewSkillResearch() {
             {renderCombo(6, "Criatividade")}
             {renderCombo(7, "Senso crítico")}
             <Button type="submit">
-              Entrar na sala
+              Criar gráfico de habilidades
             </Button>
           </form>
           <p>
